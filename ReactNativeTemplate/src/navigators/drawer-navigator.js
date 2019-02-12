@@ -2,7 +2,6 @@ import React from "react";
 import { createDrawerNavigator, createAppContainer } from "react-navigation";
 import BottomTabNavigator from "./bottom-tab-navigator";
 import { SettingsNavigator } from "./screen-stack-navigators";
-import SettingsScreen from "../screens/SettingsScreen";
 
 const DrawerNavigator = createDrawerNavigator({
   /*To have a header on the drawer screens, 
