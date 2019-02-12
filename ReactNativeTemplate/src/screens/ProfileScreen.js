@@ -1,21 +1,20 @@
 import { View, Text, StyleSheet } from "react-native";
 import React, { Component } from "react";
 import { MenuButton, Logo } from "../components/header/header";
-import { HeaderBackButton } from "react-navigation";
 
-export default class SettingsScreen extends React.Component {
+export default class ProfileScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return {
-      headerLeft: <HeaderBackButton onPress={() => navigation.goBack(null)} />,
+      headerLeft: <MenuButton onPress={() => navigation.openDrawer()} />,
       headerTitle: <Logo />,
-      headerBackTitle: "Settings",
+      headerBackTitle: "Profile",
       headerLayoutPreset: "center"
     };
   };
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello! Welcome to my settings page</Text>
+        <Text>Hello! Welcome to my profile page</Text>
       </View>
     );
   }

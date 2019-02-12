@@ -7,6 +7,7 @@ const deviceWidth = Dimensions.get("window").width;
 export class Logo extends React.Component {
     render() {
         return (
+            //Add your logo in the image tag
             <View style={{ flex: 0.8 }}>
             <Image
                 source={require('../../assets/logo.png')}

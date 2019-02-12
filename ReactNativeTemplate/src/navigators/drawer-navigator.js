@@ -1,15 +1,17 @@
 import React from "react";
 import { createDrawerNavigator, createAppContainer } from "react-navigation";
-import {View, Text, TouchableOpacity } from "react-native";
-import BottomTabNavigator from './bottom-tab-navigator'
-import HomeScreen from '../screens/HomeScreen'
+import BottomTabNavigator from "./bottom-tab-navigator";
 import { SettingsNavigator } from "./screen-stack-navigators";
+import SettingsScreen from "../screens/SettingsScreen";
 
 const DrawerNavigator = createDrawerNavigator({
-       Home: BottomTabNavigator,
-        Settings: SettingsNavigator
-})
+  /*To have a header on the drawer screens, 
+        there must be a navigator that includes the screen you want to add to the drawer navigator.
+        See 'screen-stack-navigator' file*/
+  Home: BottomTabNavigator,
+  Settings: SettingsNavigator
+});
 
-const Drawer = createAppContainer(DrawerNavigator)
+const Drawer = createAppContainer(DrawerNavigator);
 
 export default Drawer;
