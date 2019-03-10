@@ -10,7 +10,7 @@ A template for react native applications with built-in navigation. Includes a dr
 # Running the app
 
 
-1. Follow the instructions and install the dependencies required for your Target OS from [here](https://facebook.github.io/react-native/docs/getting-started.html)
+1. Follow the instructions and install the dependencies required for your target OS from [here](https://facebook.github.io/react-native/docs/getting-started.html)
 
 
 2.  ```
